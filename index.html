@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <script type="module" src="./src/js/index.js"></script>
+    <title>Кредитные предложения</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Доступные кредитные предложения</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Название</th>
+          <th>Ставка</th>
+          <th>Срок</th>
+          <th>Оформить заявку</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Кредит №1</td>
+          <td>30%</td>
+          <td>12 мес.</td>
+          <td><button class="table__button">Оформить</button></td>
+        </tr>
+        <tr>
+          <td>Кредит №2</td>
+          <td>15%</td>
+          <td>24 мес.</td>
+          <td><button class="table__button">Оформить</button></td>
+        </tr>
+        <tr>
+          <td>Кредит №3</td>
+          <td>25%</td>
+          <td>36 мес.</td>
+          <td><button class="table__button">Оформить</button></td>
+        </tr>
+        <tr>
+          <td>Кредит №4</td>
+          <td>20%</td>
+          <td>48 мес.</td>
+          <td><button class="table__button">Оформить</button></td>
+        </tr>
+        <tr>
+          <td>Кредит №5</td>
+          <td>10%</td>
+          <td>60 мес.</td>
+          <td><button class="table__button">Оформить</button></td>
+        </tr>
+    </table>
+      
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__close">
+          <img src="./src/images/close.svg" alt="close">
+        </button>
+        <h1 class="modal__title">Оформление заявки</h1>
+        <form action="" class="modal__form">
+          <input class="modal__input email" type="text" placeholder="Email" value="">
+          <input class="modal__input phone" type="text" placeholder="Телефон" value="">
+          <input class="modal__input fio" type="text" placeholder="ФИО" value="">
+          <input class="modal__input sum" type="text" placeholder="Необходимая сумма" value="">
+          <input class="modal__input age" type="number" placeholder="Ваш возраст" value="">
+          <button class="modal__button-primary">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
